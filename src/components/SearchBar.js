@@ -8,7 +8,8 @@ class SearchBar extends React.Component {
   // always equal to our instance of the SearchBar
   onFormSubmit(event) {
     event.preventDefault();
-    console.log(this.state.term);
+    // `onSubmit` is a reference to the props in the SearchBar
+    this.props.onSubmit(this.state.term);
   }
 
   render() {
