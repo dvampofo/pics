@@ -3,6 +3,8 @@ import unsplash from "../api/unsplash";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
 
+console.log(process.env.REACT_APP_WEATHER_API_KEY);
+
 class App extends React.Component {
   state = { images: [] };
 
